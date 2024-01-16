@@ -1,27 +1,37 @@
-[gd_scene load_steps=3 format=3 uid="uid://b5v8gxco1bsoh"]
+[gd_scene load_steps=4 format=3 uid="uid://b5v8gxco1bsoh"]
 
 [ext_resource type="PackedScene" uid="uid://bqopf8lqwtyv3" path="res://Character/character_body_2d.tscn" id="1_rd2nm"]
 [ext_resource type="PackedScene" uid="uid://dvwqljy51rho2" path="res://box.tscn" id="2_8ammc"]
+[ext_resource type="PackedScene" uid="uid://dacwy7f3sto1i" path="res://Mobs/enemy.tscn" id="3_mhvvb"]
 
 [node name="Game" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_top = -1.0
-offset_right = 1151.0
-offset_bottom = 646.0
+offset_top = 2.0
+offset_right = 1152.0
+offset_bottom = 645.0
 color = Color(0, 0.133333, 0.0666667, 1)
 
 [node name="Player" parent="." instance=ExtResource("1_rd2nm")]
-position = Vector2(564, 301)
+position = Vector2(355, 291)
 
 [node name="Box" parent="." instance=ExtResource("2_8ammc")]
-position = Vector2(205, 249)
+position = Vector2(60, 124)
 
 [node name="Box2" parent="." instance=ExtResource("2_8ammc")]
-position = Vector2(836, 244)
+position = Vector2(838, 152)
 
 [node name="Box3" parent="." instance=ExtResource("2_8ammc")]
-position = Vector2(529, 42)
+position = Vector2(478, -7)
 
 [node name="Box4" parent="." instance=ExtResource("2_8ammc")]
-position = Vector2(483, 497)
+position = Vector2(116, 416)
+
+[node name="Enemy" parent="." instance=ExtResource("3_mhvvb")]
+position = Vector2(781, 357)
+
+[node name="Enemy2" parent="." instance=ExtResource("3_mhvvb")]
+position = Vector2(635, 493)
+
+[node name="Enemy3" parent="." instance=ExtResource("3_mhvvb")]
+position = Vector2(610, 350)

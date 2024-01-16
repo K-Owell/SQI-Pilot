@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://coni867kg14wi"
-path="res://.godot/imported/Newt_VerySUS_Trans.png-01338fea7ad2db85ce0c23c628e12759.ctex"
+path="res://.godot/imported/Newt_VerySUS_Trans.png-f7cd4bd1554315fe27d598c3503c91a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Mobs/Newt_VerySUS_Trans.png"
-dest_files=["res://.godot/imported/Newt_VerySUS_Trans.png-01338fea7ad2db85ce0c23c628e12759.ctex"]
+source_file="res://assets/Newt_VerySUS_Trans.png"
+dest_files=["res://.godot/imported/Newt_VerySUS_Trans.png-f7cd4bd1554315fe27d598c3503c91a6.ctex"]
 
 [params]
 

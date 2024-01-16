@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dacwy7f3sto1i"]
+
+[ext_resource type="Texture2D" uid="uid://coni867kg14wi" path="res://assets/Newt_VerySUS_Trans.png" id="1_56pjk"]
+[ext_resource type="Script" path="res://Mobs/enemy.gd" id="1_uv17s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgt7w"]
+size = Vector2(562.889, 556.907)
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_priority = 2.0
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_uv17s")
+
+[node name="NewtVerySusTrans" type="Sprite2D" parent="."]
+scale = Vector2(0.0870508, 0.0969641)
+texture = ExtResource("1_56pjk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 8)
+scale = Vector2(0.0870508, 0.0969641)
+shape = SubResource("RectangleShape2D_vgt7w")
