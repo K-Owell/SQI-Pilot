@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dacwy7f3sto1i"]
 
 [ext_resource type="Texture2D" uid="uid://coni867kg14wi" path="res://assets/Newt_VerySUS_Trans.png" id="1_56pjk"]
-[ext_resource type="Script" path="res://Mobs/enemy.gd" id="1_uv17s"]
+[ext_resource type="Script" path="res://Mobs/enemy_common.gd" id="1_uv17s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgt7w"]
 size = Vector2(562.889, 556.907)
