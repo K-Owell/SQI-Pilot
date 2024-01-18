@@ -202,6 +202,7 @@ animations = [{
 size = Vector2(22, 24)
 
 [node name="player" type="CharacterBody2D"]
+y_sort_enabled = true
 script = ExtResource("1_e0cyg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
