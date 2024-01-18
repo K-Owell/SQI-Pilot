@@ -1,8 +1,11 @@
 extends CharacterBody2D
 
+# Assigning Character Values
+var player_health = 100
+
 # Assigning movement numbies
-const movement_speed = 400
-const dash_speed = 800
+var movement_speed = 400
+var dash_speed = 800
 var dashing = false
 var can_dash = true
 
