@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://chqbkbjxl18s"]
 
-[ext_resource type="Script" path="res://Game.gd" id="1_20med"]
+[ext_resource type="Script" path="res://Scripts/Game.gd" id="1_20med"]
 [ext_resource type="PackedScene" uid="uid://yuat2ogcapqp" path="res://Assets/Characters/player_character.tscn" id="2_lvolu"]
 [ext_resource type="Script" path="res://Assets/Characters/player_camera.gd" id="3_s0ntv"]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjr02soa7c41t"
-path="res://.godot/imported/amongorse.png-889ca4361b2d61aac1aa69b1747e646a.ctex"
+uid="uid://b7iotf3vvaalv"
+path="res://.godot/imported/Ooze.png-f0451115d5eee0ba9f4484779db694a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Characters/amongorse.png"
-dest_files=["res://.godot/imported/amongorse.png-889ca4361b2d61aac1aa69b1747e646a.ctex"]
+source_file="res://Assets/Tilesets/Ooze.png"
+dest_files=["res://.godot/imported/Ooze.png-f0451115d5eee0ba9f4484779db694a4.ctex"]
 
 [params]
 
