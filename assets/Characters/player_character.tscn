@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://yuat2ogcapqp"]
+
+[ext_resource type="Texture2D" uid="uid://bjr02soa7c41t" path="res://Assets/Characters/amongorse.png" id="1_b3jlq"]
+[ext_resource type="Script" path="res://Assets/Characters/player_character.gd" id="1_cflnc"]
+
+[node name="player_character" type="Sprite2D"]
+position = Vector2(1, 0)
+texture = ExtResource("1_b3jlq")
+script = ExtResource("1_cflnc")

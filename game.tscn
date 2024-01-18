@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://chqbkbjxl18s"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_20med"]
+[ext_resource type="PackedScene" uid="uid://yuat2ogcapqp" path="res://Assets/Characters/player_character.tscn" id="2_lvolu"]
+[ext_resource type="Script" path="res://Assets/Characters/player_camera.gd" id="3_s0ntv"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_20med")
+
+[node name="player_character" parent="." instance=ExtResource("2_lvolu")]
+z_index = 1
+
+[node name="Camera2D" type="Camera2D" parent="player_character"]
+position = Vector2(-1, 0)
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+script = ExtResource("3_s0ntv")
