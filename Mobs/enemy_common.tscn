@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://dacwy7f3sto1i"]
+[gd_scene load_steps=5 format=3 uid="uid://dacwy7f3sto1i"]
 
 [ext_resource type="Texture2D" uid="uid://coni867kg14wi" path="res://assets/Newt_VerySUS_Trans.png" id="1_56pjk"]
 [ext_resource type="Script" path="res://Mobs/enemy_common.gd" id="1_uv17s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgt7w"]
 size = Vector2(562.889, 556.907)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f8gxs"]
+size = Vector2(38, 56)
 
 [node name="Enemy" type="CharacterBody2D"]
 collision_priority = 2.0
@@ -20,3 +23,12 @@ texture = ExtResource("1_56pjk")
 position = Vector2(-1, 8)
 scale = Vector2(0.0870508, 0.0969641)
 shape = SubResource("RectangleShape2D_vgt7w")
+
+[node name="enemy_hitbox" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_f8gxs")
+debug_color = Color(0.709804, 0.482353, 0.168627, 0.419608)

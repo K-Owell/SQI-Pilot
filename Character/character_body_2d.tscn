@@ -1,28 +1,43 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqopf8lqwtyv3"]
+[gd_scene load_steps=6 format=3 uid="uid://bqopf8lqwtyv3"]
 
 [ext_resource type="Script" path="res://Character/Player.gd" id="1_0utff"]
 [ext_resource type="Texture2D" uid="uid://dobxijy3yh37j" path="res://Character/player_v1.png" id="2_dkcjq"]
+[ext_resource type="Script" path="res://Character/player_hurtbox.gd" id="3_yaad8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4yp38"]
 size = Vector2(39, 47)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w4j32"]
+size = Vector2(26, 51)
 
 [node name="player" type="CharacterBody2D"]
 motion_mode = 1
 platform_on_leave = 2
 script = ExtResource("1_0utff")
 
-[node name="PlayerV1" type="Sprite2D" parent="."]
-texture = ExtResource("2_dkcjq")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 7.5)
 shape = SubResource("RectangleShape2D_4yp38")
+
+[node name="PlayerV1" type="Sprite2D" parent="."]
+texture = ExtResource("2_dkcjq")
 
 [node name="Dash_Burst" type="Timer" parent="."]
 wait_time = 0.2
 
 [node name="Dash_Cooldown" type="Timer" parent="."]
 wait_time = 2.0
+
+[node name="player_hurtbox" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 0
+monitorable = false
+script = ExtResource("3_yaad8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player_hurtbox"]
+position = Vector2(0, 5.5)
+shape = SubResource("RectangleShape2D_w4j32")
+debug_color = Color(0.74902, 0.458824, 0.141176, 0.419608)
 
 [connection signal="timeout" from="Dash_Burst" to="." method="_on_dash_burst_timeout"]
 [connection signal="timeout" from="Dash_Cooldown" to="." method="_on_dash_cooldown_timeout"]
